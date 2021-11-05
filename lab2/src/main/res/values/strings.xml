@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string-array name="group_number">
+        <item>920601</item>
+        <item>920602</item>
+        <item>920603</item>
+        <item>920604</item>
+        <item>920605</item>
+        <item>920606</item>
+    </string-array>
+    <string-array name="faculty">
+        <item>FITY</item>
+        <item>FRA</item>
+        <item>FKSIS</item>
+        <item>FIC</item>
+    </string-array>
+</resources>
