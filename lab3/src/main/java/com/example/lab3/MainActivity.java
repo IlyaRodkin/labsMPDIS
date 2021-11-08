@@ -17,6 +17,7 @@ public class MainActivity extends Activity implements OnClickListener {
     private Button switchToGreen;
     private Button switchToRed;
     private Button switchToBlue;
+    private Button switchToBlack;
     private LinearLayout screenLayout;
     private Toast informationToast;
 
@@ -32,14 +33,15 @@ public class MainActivity extends Activity implements OnClickListener {
         switchToBlue = (Button) findViewById(R.id.switchBlue);
         switchToGreen = (Button) findViewById(R.id.switchGreen);
         switchToRed = (Button) findViewById(R.id.switchRed);
+        switchToBlack = (Button) findViewById(R.id.switchBlack);
 
-        switchToBlue.par
-        screenLayout = (LinearLayout) findViewById(R.id.screenLayout);
+        screenLayout = (LinearLayout) switchToBlue.getParent();
 
         // setup listeners
         switchToBlue.setOnClickListener(this);
         switchToRed.setOnClickListener(this);
         switchToGreen.setOnClickListener(this);
+        switchToBlack.setOnClickListener(this);
 
         informationToast = Toast.makeText(this, "", Toast.LENGTH_SHORT);
 
@@ -57,6 +59,9 @@ public class MainActivity extends Activity implements OnClickListener {
         } else if (switchToGreen.equals(view)) {
             screenLayout.setBackgroundColor(Color.GREEN);
             showToast("Hello green");
+        }else if (switchToBlack.equals(view)) {
+            screenLayout.setBackgroundColor(Color.BLACK);
+            showToast("Hello black");
         }
 
 
