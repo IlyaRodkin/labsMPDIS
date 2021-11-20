@@ -21,10 +21,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Red" />
+
     <Button
         android:id="@+id/switchBlack"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Black" />
+        android:text="yellow" />
+
+    <Button
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="image" />
+
+    <Button
+        android:id="@+id/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dialog" />
 
 </LinearLayout>
